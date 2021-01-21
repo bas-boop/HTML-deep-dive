@@ -4,6 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        function haalElementenOp(){
+            let fotoslider = document.getElementById("fotoslider");
+            console.log(fotoslider);
+
+            let eersteFotoDiv = document.querySelector('.foto');
+            console.log(eersteFotoDiv);
+
+            let alleFotoDivs = document.querySelectorAll('.foto');
+            console.log(alleFotoDivs);
+        }
+
+        // Let op je zet hier de naam van de function ZONDER de ()
+        window.addEventListener('DOMContentLoaded', haalElementenOp)
+
+        // Class aanpassen
+        fotoslider.className = 'fotoslider';
+
+        // Inhoud tussen tags aanpassen
+        fotoslider.innerHTML = 'Alle fotos vervangen door deze tekst!';
+
+        //  Style aanpassen
+        fotoslider.style.borderColor = '#0000FF';
+        fotoslider.style.borderStyle = 'solid';
+        fotoslider.style.borderWidth = '5px';
+        fotoslider.position = 'absolute';
+        fotoslider.left = '100px';
+    </script>
+    <style>
+        
+    </style>
 </head>
 <body>
     <div id="fotoslider">
